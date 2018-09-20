@@ -1,0 +1,80 @@
+<html>
+<head><title>Get Risk Score</title></head>
+ <body>
+   	
+<link rel="stylesheet" type="text/css" href="Style.css">
+
+    
+<p2>This application takes your academic history, and asseses your probable success<br>
+in select classes based on the cumulative past preformance of other students.<br>
+The classes selected are common for freshmen and across many majors. It is<br>
+merely a <i>decision support tool</i>, and is <i>not meant to replace one-on-one advisement</i><br>
+with an experienced faculty member. Nonetheless, use and feedback are appreciated.<br> This application is in it's experimental stage and will be revised as more is learned <br>and more data is aquired. <br><br> Send <i>detailed </i>feedback to Ronald Sarner: sarnerr@sunyit.edu
+</p2>
+
+
+     <form action="process.php" method = "post">
+     
+     <!-- SELECT A CLASS FROM A DROP DOWN LIST -->
+     
+       <p>Select a class to assess risk for:</p><select name="inputClass" tyhpe="text" >
+     
+     <option value="Select">Select</option> 
+     <option value="ACC201">ACC201 intro to financial accounting</option> 
+     <option value="AST222">AST222 Astronomy</option> 
+     <option value="BIO105">BIO105 intro to ecology</option> 
+     <option value="BIO215">BIO215 anatomy and physiology</option> 
+     <option value="BUS101">BUS101 introduction to business</option> 
+     <option value="BUS105">BUS105 business law</option>
+     <option value="CET102">CET102 electri circuits</option>
+     <option value="ECO110">ECO110 microeconomics</option>
+     <option value="ENG101">ENG101 freshman composition</option>
+     <option value="ESC110">ESC110 intro to engineering</option>
+     <option value="CET101">CET101 Fund Elec $ Comp Eng Tech</option>
+     <option value="CHE110">CHE110 essentials of chemistry</option>
+     <option value="CHE130">CHE130 introductory chemistry I</option>
+     <option value="COM112">COM112 digital photography and imaging</option>
+     <option value="CS100">CS100 intro to computing seminar</option>
+     <option value="CS108">CS108 computing fundamentals</option>
+     <option value="CTC162">CTC162 Computer aided design</option>
+     <option value="HIS101">HIS101 Amer Hist: Colonies-Reconstruc</option>
+     <option value="HIS102">HIS102 Amer Hist: Reconstruct-Presen</option>
+     <option value="IDS102">IDS102 art and culture</option>
+     <option value="IDS103">IDS103 science/technology/human value</option>
+     <option value="MAT110">MAT110 college algebra</option>
+     <option value="MAT112">MAT112 elements of calculus</option>
+     <option value="MAT115">MAT115 finite math for computer science</option>
+     <option value="MAT120">MAT120 precalculus</option>
+     <option value="MAT121">MAT121 calculus for engr tech I</option>
+     <option value="MAT122">MAT122 calculus for engr tech II</option>
+     <option value="MAT151">MAT151 Calculus I</option>
+     <option value="MAT152">MAT152 Calculus II</option>
+     <option value="MAT230">MAT230 Differential Equations</option>
+     <option value="MAT253">MAT253 Calculus 3</option>
+     <option value="MTC101">MTC101 Intro to engineering technology</option>
+     <option value="NCS181">NCS181 Intro to Cybersecurity</option>
+     <option value="PHY101">PHY101 General Physics I</option>
+     <option value="PHY102">PHY102 General Physics II</option>
+     <option value="PHY201">PHY201 Calculus Based Physics I</option>
+     <option value="PHY202">PHY202 Calculus Based Physics II</option>
+     <option value="PSY100">PSY100 Principles of Psychology</option>
+     <option value="SOC100">SOC100 Introduction to Sociology</option>
+     <option value="SPA101">SPA101 Elementary Spanish</option>
+     <option value="STA101">STA101 Statistics</option>
+     
+    
+    
+    
+  </select>
+  <br>
+  <br>      
+       <p>Now, enter your U-Number (Example: 000123456)</p> <input name="inputUnum" type="text" placeholder = "U number">
+         
+        <input type ="submit">
+        
+     </form>
+    
+    
+ </body>
+ </html>
+ 

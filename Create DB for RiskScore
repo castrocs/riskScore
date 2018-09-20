@@ -1,0 +1,18 @@
+
+--Execute the following SQL script in MySQL to create the database and schema for RiskScore:
+
+ CREATE DATABASE rs_db;
+
+ CREATE TABLE student_data(
+	Unum      VARCHAR(9) NOT NULL,
+	Fname     VARCHAR(30) NOT NULL,
+	Lname	  VARCHAR(30) NOT NULL,
+	Hsgpa     DECIMAL(3,2) NOT NULL,
+	Hsaverage DECIMAL(5,2) NOT NULL,
+	satmath   SMALLINT(6) NOT NULL,
+	satverb   SMALLINT(6) NOT NULL, 
+	composite SMALLINT(6) NOT NULL, 
+	major     VARCHAR(4) NOT NULL,
+	PRIMARY KEY (Unum));
+
+CREATE USER 'rsuser'@'localhost' IDENTIFIED BY 'rs2017';
